@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--两种方式引用-->
+    <!--1.外部引入-->
+    <script src="test.js"></script>
+    <!--2.内部引入-->
+    <script>
+        var num=1;
+        console.log(num);
+    </script>
+
+    <!--script最后放置于body中且置于最后一个html标签之后以防阻止阻塞页面代码的执行-->
+
+
+    <!--输出方式-->
+    <script>
+        console.log('messi') /*控制台输出*/
+        alert('messi') /*浏览器弹出*/
+        prompt('请输入内容') /*请输入内容*/
+    </script>
+
+</body>
+</html>

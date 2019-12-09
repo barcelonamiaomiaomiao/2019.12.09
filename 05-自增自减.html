@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num=10;
+        num+=1
+        console.log(num) //11
+        var a=10;
+        a++;
+        console.log(a);//11
+        c=a++;
+        console.log(c);//11 先赋值
+        console.log(a);//12 再计算
+        var b=10;
+        ++b;
+        console.log(b);//11
+        d=++b;
+        console.log(d);//12 先计算
+        console.log(b);//12 再复制
+
+
+        //num++ ++num 本身值相同,但是赋予的值有区别;
+    </script>
+</body>
+</html>

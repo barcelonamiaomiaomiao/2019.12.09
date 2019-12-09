@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //基本数据类型:string.number.boolean.undefind.null.symbol    
+        //引用数据类型:对象.数组.函数
+
+        //判断数据类型type of
+        var a=2;
+        console.log(typeof a);
+        var b=true;
+        console.log(typeof b);
+        var arr=[1,2,3,4,5,6];
+        console.log(typeof arr); //数组检测为obj
+        var obj={
+            name:'小明',
+            age:16,
+            sex:'男'
+        };
+        console.log(typeof obj);
+        var fn=function(){
+            console.log(1)
+        };
+        console.log(typeof fn);
+
+        //字符串里的引号嵌套问题一般用单双引号隔开
+
+        //isNaN()用来辨别数值是否为number,NaN与任何值不等包括NaN
+        var num=13;
+        console.log(isNaN(num));
+        var str='哈哈';
+        console.log(isNaN(str));
+
+    </script>
+</body>
+</html>
