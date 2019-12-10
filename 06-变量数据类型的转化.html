@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //其他数据类型转化成数字
+       //1.undefined null
+        console.log(Number(undefined)); //NaN
+        console.log(Number(null));//0
+        //2.true false
+        console.log(Number(true));//1
+        console.log(Number(false));//0
+        //3.字符串
+        console.log(Number('messi'));//NaN
+        console.log(Number('123messi'));//NaN
+        console.log(Number('100'));//100
+        console.log(Number(''));//0
+        console.log(Number(' '));//0
+
+
+        //其他数据类型转化成字符串
+        //万物皆可直接转化为字符串
+        console.log(String(true));
+        console.log(String(false));
+        console.log(String(undefined));
+        console.log(String(null));
+        console.log(String(NaN));
+        console.log(String(100));
+
+
+
+        //其他数据类型转化成boolean
+        //除了0.undefined.NaN.null.''为false其它都为true
+        console.log(Boolean(0));//false
+        console.log(Boolean(undefined));//false
+        console.log(Boolean(NaN));//false
+        console.log(Boolean(null));//false
+        console.log(Boolean(''));//false
+        console.log(Boolean(-1));//true
+        console.log(Boolean(' '));//true
+    </script>
+</body>
+</html>

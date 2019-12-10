@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //>,<,==,===,!=,!==
+        //对于非number值进行比较时,会先将其转化成number再比较
+        console.log('1'>false) ;//true
+        console.log(true>=1);//true
+        console.log(1>'haha');//false
+        console.log(1>undefined);//false
+
+        //当两个都是字符串进行比较时,不会将它转化为number,而是比较他们的Unicode 编码值
+        console.log('11'>'2');//false
+        console.log('h'>'a');//true
+        console.log("我爱你中国" === "我爱你中国");//true
+
+        //注意:undefined null比较 NaN NaN比较
+        console.log(undefined==null);//true
+        console.log(NaN==NaN);//false
+
+        
+    </script>
+</body>
+</html>

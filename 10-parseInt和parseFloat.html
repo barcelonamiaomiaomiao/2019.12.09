@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //parseFloat(字符串转成小数)  和 parseInt (字符串转成整数) 
+
+       //从第一个非空白字符(空格、换行、tab)开始转化,直到遇到一个非number字符为止
+       console.log(parseInt(' 2019messi'));//2019
+       console.log(parseInt('a2019messi'));//NaN
+       console.log(parseInt('   2019.1messi'));//2019
+        console.log(parseFloat(' 2012.11.2x'));//2012.11
+       //如果是对非字符串使用parseInt(),parseFloat(),会先转换成字符串
+       console.log(parseInt(null));//NaN
+       console.log(parseInt(1.1111));//1
+       //parseInt()如果出现两个参数时,会进行进制的转化
+       console.log(parseInt('1001.11',2));//9
+       console.log(parseInt('100.x11111',2));//4
+    </script>
+</body>
+</html>

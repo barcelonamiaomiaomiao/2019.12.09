@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //当对非number的值进行运算时,会将该值先转化成number
+        console.log(true+1);//2
+        console.log(undefined +1);//NaN
+        console.log(1-'1');//0
+
+        //任何值和NaN运算都为NaN
+        console.log(1+NaN);//NaN
+
+        //任何值与字符串做加法运算时都会转化成字符串,然后再拼接
+        console.log(1+'1');//11
+        console.log(true+'1');//true1
+        console.log(true-'1');//0
+        console.log('1'-'1');//0
+    </script>
+</body>
+</html>
